@@ -2,7 +2,7 @@
 
 var AppuserConfigure = angular.module('userconfigure', [ ]);
 
-var userconfigCtrl = function($log, $scope, $interval, UserConfigureService) {
+var userconfigCtrl = function($log, $scope, $interval, $location, UserConfigureService) {
 	
 	var userconfCtrl = this;
 	$scope.users = [];  
@@ -72,6 +72,7 @@ var userconfigCtrl = function($log, $scope, $interval, UserConfigureService) {
 		$scope.CreateyourAccount2 = false;
 		$scope.CreateyourAccount3 = false;
 		$scope.CreateyourAccount4 = true;
+		
 		$scope.users.useremail = $scope.useremail;
 		$scope.users.userpassword = $scope.userpassword;
 		$scope.users.Businessname = $scope.Businessname;
@@ -97,7 +98,7 @@ var userconfigCtrl = function($log, $scope, $interval, UserConfigureService) {
 		$scope.users.userfinalmobile = $scope.userfinalmobile;
 		$scope.users.yesaddnow = $scope.yesaddnow;
 		$scope.users.notaddnow = $scope.notaddnow;
-		
+		$location.url('http://localhost:8084/marketsquare/account.html');
 	};
 
 };
