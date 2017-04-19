@@ -130,37 +130,36 @@
     
           <div class="form-group has-feedback">
           <label for="exampleInputEmail1">Product</label>
-        <input type="text" class="form-control" placeholder="Product">
+        <input type="text" class="form-control" placeholder="Product" data-ng-model="UploadProductName">
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
        <label for="exampleInputEmail1">Product Code</label>
-        <input type="text" class="form-control" placeholder="Product Code">
+        <input type="text" class="form-control" placeholder="Product Code" data-ng-model="UploadProductCode">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
        <label for="exampleInputEmail1">Traits</label>
-        <input type="text" class="form-control" placeholder="Traits">
+        <input type="text" class="form-control" placeholder="Traits" data-ng-model="UploadProductTraits">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
        <label for="exampleInputEmail1">Description</label>
-        <textarea class="form-control" rows="3" placeholder="Description"></textarea>
+        <textarea class="form-control" rows="3" placeholder="Description" data-ng-model="UploadProductDescription"></textarea>
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
        <label for="exampleInputEmail1">Unit of Measure</label>
-        <input type="text" class="form-control" placeholder="Unit of Measure">
+        <input type="text" class="form-control" placeholder="Unit of Measure" data-ng-model="UploadProductunitmeasure">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
        <label for="exampleInputEmail1">Ask Price</label>
-        <input type="text" class="form-control" placeholder="Dallars">
+        <input type="text" class="form-control" placeholder="Dallars" data-ng-model="UploadProductaskprice">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
-      <div class="row">
 
-        <div class="col-xs-12">
+        <div class="form-group has-feedback">
           <button type="button" class="btn btn-primary btn-block" data-ng-click="productctrl.productsaccount();">Save/Continues</button>
         </div>
         <!-- /.col -->
@@ -175,82 +174,78 @@
                               
               <div data-ng-show="detailsyourproducts1"> 
               <div class="col-md-4">
-              
+              <h1>Product Detail</h1>
                   <div class="form-group has-feedback">
        <label for="exampleInputEmail1">Product</label>
-        <input type="text" class="form-control" placeholder="Product">
+        <input type="text" class="form-control" placeholder="Product" data-ng-model="ProductDetailName">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       
       
           <div class="form-group has-feedback">
        <label for="exampleInputEmail1">Specially Traits</label>
-        <input type="text" class="form-control" placeholder="Specially Traits">
+        <input type="text" class="form-control" placeholder="Specially Traits" data-ng-model="ProductDetailSpeciallyTraits">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       
           <div class="form-group has-feedback">
        <label for="exampleInputEmail1">Traits</label>
-        <input type="text" class="form-control" placeholder="Traits">
+        <input type="text" class="form-control" placeholder="Traits" data-ng-model="ProductDetailTraits">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       
           <div class="form-group has-feedback">
        <label for="exampleInputEmail1">Serving Size</label>
-        <input type="text" class="form-control" placeholder="Serving Size">
+        <input type="text" class="form-control" placeholder="Serving Size" data-ng-model="ProductDetailServingSize">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       
           <div class="form-group has-feedback">
        <label for="exampleInputEmail1">Calories</label>
-        <input type="text" class="form-control" placeholder="Calories">
+        <input type="text" class="form-control" placeholder="Calories" data-ng-model="ProductDetailCalories">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       
           <div class="form-group has-feedback">
        <label for="exampleInputEmail1">Total Fat</label>
-        <input type="text" class="form-control" placeholder="Total Fat">
+        <input type="text" class="form-control" placeholder="Total Fat" data-ng-model="ProductDetailTotalFat">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       
       
           <div class="form-group has-feedback">
        <label for="exampleInputEmail1">Saturated Fat</label>
-        <input type="text" class="form-control" placeholder="Saturated Fat">
+        <input type="text" class="form-control" placeholder="Saturated Fat" data-ng-model="ProductDetailTotalFat">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
      
           <div class="form-group has-feedback">
        <label for="exampleInputEmail1">Traits Fats</label>
-        <input type="text" class="form-control" placeholder="Traits Fats">
+        <input type="text" class="form-control" placeholder="Traits Fats" data-ng-model="ProductDetailTraitsFats">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       
          <div class="form-group has-feedback">
        <label for="exampleInputEmail1">Cholesterol</label>
-        <input type="text" class="form-control" placeholder="Cholesterol">
+        <input type="text" class="form-control" placeholder="Cholesterol" data-ng-model="ProductDetailCholesterol">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       
       
          <div class="form-group has-feedback">
        <label for="exampleInputEmail1">Sodium</label>
-        <input type="text" class="form-control" placeholder="Sodium">
+        <input type="text" class="form-control" placeholder="Sodium" data-ng-model="ProductDetailSodium">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
          <div class="form-group has-feedback">
        <label for="exampleInputEmail1">Sugars</label>
-        <input type="text" class="form-control" placeholder="Sugars">
+        <input type="text" class="form-control" placeholder="Sugars" data-ng-model="ProductDetailSugars">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       
 
-      
-              </div>
-              
-        <div class="row">
 
-        <div class="col-xs-12">
+        <div class="form-group has-feedback">
           <button type="button" class="btn btn-primary btn-block" data-ng-click="productctrl.productsaccount1();">Save/Continues</button>
         </div>
         <!-- /.col -->
@@ -260,16 +255,17 @@
               
               <div data-ng-show="detailsyourproducts2">
               <div class="col-md-4">
+              <h1>Price Your Product</h1>
                     <div class="form-group has-feedback">
        <label for="exampleInputEmail1">Product Name</label>
-        <input type="text" class="form-control" placeholder="Product Name">
+        <input type="text" class="form-control" placeholder="Product Name" data-ng-model="PriceProductName">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       
       
             <div class="form-group has-feedback">
        <label for="exampleInputEmail1">Product Number</label>
-        <input type="text" class="form-control" placeholder="Product Number">
+        <input type="text" class="form-control" placeholder="Product Number" data-ng-model="PriceProductName">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       
@@ -277,34 +273,31 @@
       
             <div class="form-group has-feedback">
        <label for="exampleInputEmail1">Unit of Measure</label>
-        <input type="text" class="form-control" placeholder="Unit of Measure">
+        <input type="text" class="form-control" placeholder="Unit of Measure" data-ng-model="PriceUnitofMeasure">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       
       
             <div class="form-group has-feedback">
        <label for="exampleInputEmail1">Unit Sale Price</label>
-        <input type="text" class="form-control" placeholder="Unit Sale Price">
+        <input type="text" class="form-control" placeholder="Unit Sale Price" data-ng-model="PriceUnitSalePrice">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       
             <div class="form-group has-feedback">
        <label for="exampleInputEmail1">Bulk Contract Sales</label>
-        <input type="text" class="form-control" placeholder="Bulk Contract Sales">
+        <input type="text" class="form-control" placeholder="Bulk Contract Sales" data-ng-model="PriceBulkContractSales">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       
             <div class="form-group has-feedback">
        <label for="exampleInputEmail1">Ask Price</label>
-        <input type="text" class="form-control" placeholder="Ask Price">
+        <input type="text" class="form-control" placeholder="Ask Price" data-ng-model="PriceAskPrice">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
-              
-              </div>
-              
-                    <div class="row">
 
-        <div class="col-xs-12">
+
+        <div class="form-group has-feedback">
           <button type="button" class="btn btn-primary btn-block" data-ng-click="productctrl.productsaccount2();">Save/Continues</button>
         </div>
         <!-- /.col -->
@@ -314,63 +307,61 @@
                 
               <div data-ng-show="detailsyourproducts3">
               <div class="col-md-4">
+              <h1>Product Certifications</h1>
                        <div class="form-group has-feedback">
        <label for="exampleInputEmail1">Product Name</label>
-        <input type="text" class="form-control" placeholder="Product Name">
+        <input type="text" class="form-control" placeholder="Product Name" data-ng-model="CertificationsProductName">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       
                <div class="form-group has-feedback">
        <label for="exampleInputEmail1">Product Number</label>
-        <input type="text" class="form-control" placeholder="Product Number">
+        <input type="text" class="form-control" placeholder="Product Number" data-ng-model="CertificationsProductNumber">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       
                <div class="form-group has-feedback">
                   <label for="exampleInputFile">Document</label>
-                  <input type="file" id="exampleInputFile">
+                  <input type="file" id="exampleInputFile" data-ng-model="CertificationsDocument">
 
                 </div>
       
               <div class="form-group has-feedback">
                   <label for="exampleInputFile">Document</label>
-                  <input type="file" id="exampleInputFile">
+                  <input type="file" id="exampleInputFile" data-ng-model="CertificationsDocument1">
                 </div>
                 
                 <div class="form-group has-feedback">
                   <label for="exampleInputFile">Document</label>
-                  <input type="file" id="exampleInputFile">
+                  <input type="file" id="exampleInputFile" data-ng-model="CertificationsDocument2">
                 </div>
                 
                 
                 <div class="form-group has-feedback">
                   <label for="exampleInputFile">Document</label>
-                  <input type="file" id="exampleInputFile">
+                  <input type="file" id="exampleInputFile" data-ng-model="CertificationsDocument3">
                 </div>
                 
                 <div class="form-group has-feedback">
                   <label for="exampleInputFile">Document</label>
-                  <input type="file" id="exampleInputFile">
+                  <input type="file" id="exampleInputFile" data-ng-model="CertificationsDocument4">
                 </div>
               
-              </div>
-              
-                    <div class="row">
+    
 
-        <div class="col-xs-12">
+        <div class="form-group has-feedback">
           <button type="button" class="btn btn-primary btn-block" data-ng-click="productctrl.productsaccount3();">Save/Continues</button>
-        </div>
-        <!-- /.col -->
+  
       </div>
                </div>
-              
+                </div>
               <div data-ng-show="detailsyourproducts4">
                     <div class="row">
-
+<div class="col-md-4">
         <div class="col-xs-12">
           <button type="button" class="btn btn-primary btn-block">Save/Continues</button>
         </div>
-        <!-- /.col -->
+       </div>
       </div>
               </div>
               </div>               
