@@ -14,6 +14,13 @@ var productconfigCtrl = function($log, $scope, $interval, $location, ProductConf
 	
 	this.productsaccount = function()
 	{
+		$scope.UploadProductName;
+		$scope.UploadProductCode;
+		$scope.UploadProductTraits;
+		$scope.UploadProductDescription;
+		$scope.UploadProductunitmeasure;
+		$scope.UploadProductaskprice;
+		
 		$scope.detailsyourproducts = false;
 		$scope.detailsyourproducts1 = true;
 		$scope.detailsyourproducts2 = false;
@@ -23,6 +30,18 @@ var productconfigCtrl = function($log, $scope, $interval, $location, ProductConf
 	
 	this.productsaccount1 = function()
 	{
+		$scope.ProductDetailName;
+		$scope.ProductDetailSpeciallyTraits;
+		$scope.ProductDetailTraits;
+		$scope.ProductDetailServingSize;
+		$scope.ProductDetailCalories;
+		$scope.ProductDetailTotalFat;
+		$scope.ProductDetailTotalFat;
+		$scope.ProductDetailTraitsFats;
+		$scope.ProductDetailCholesterol;
+		$scope.ProductDetailSodium;
+		$scope.ProductDetailSugars;
+		
 		$scope.detailsyourproducts = false;
 		$scope.detailsyourproducts1 = false;
 		$scope.detailsyourproducts2 = true;
@@ -32,6 +51,12 @@ var productconfigCtrl = function($log, $scope, $interval, $location, ProductConf
 	
 	this.productsaccount2 = function()
 	{
+		$scope.PriceProductName;
+		$scope.PriceUnitofMeasure;
+		$scope.PriceUnitSalePrice;
+		$scope.PriceBulkContractSales;
+		$scope.PriceAskPrice;
+		
 		$scope.detailsyourproducts = false;
 		$scope.detailsyourproducts1 = false;
 		$scope.detailsyourproducts2 = false;
@@ -48,6 +73,7 @@ var productconfigCtrl = function($log, $scope, $interval, $location, ProductConf
 		$scope.product.UploadProductDescription = $scope.UploadProductDescription;
 		$scope.product.UploadProductunitmeasure = $scope.UploadProductunitmeasure;
 		$scope.product.UploadProductaskprice = $scope.UploadProductaskprice;
+		
 		$scope.product.ProductDetailName = $scope.ProductDetailName;
 		$scope.product.ProductDetailSpeciallyTraits = $scope.ProductDetailSpeciallyTraits;
 		$scope.product.ProductDetailTraits = $scope.ProductDetailTraits;
@@ -59,6 +85,7 @@ var productconfigCtrl = function($log, $scope, $interval, $location, ProductConf
 		$scope.product.ProductDetailCholesterol = $scope.ProductDetailCholesterol;
 		$scope.product.ProductDetailSodium = $scope.ProductDetailSodium;
 		$scope.product.ProductDetailSugars = $scope.ProductDetailSugars;
+		
 		$scope.product.PriceProductName = $scope.PriceProductName;
 		$scope.product.PriceUnitofMeasure = $scope.PriceUnitofMeasure;
 		$scope.product.PriceUnitSalePrice = $scope.PriceUnitSalePrice;
