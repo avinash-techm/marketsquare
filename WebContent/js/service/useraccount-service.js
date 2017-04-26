@@ -2,7 +2,7 @@
 
 // Definition of service function.
 
-var configFunction = function($http, $q, $httpParamSerializer, $log, $location) {
+var configFunction = function($http, $q, $httpParamSerializer, $location) {
 	var userconfservice = this;
 	
 	
@@ -10,4 +10,4 @@ var configFunction = function($http, $q, $httpParamSerializer, $log, $location) 
 };
 //Adding of service to module.
 AppuserConfigure.service('UserConfigureService', [ '$http', '$q',
-		'$httpParamSerializer', '$log', '$location', configFunction ]);
+		'$httpParamSerializer','$location', configFunction ]);

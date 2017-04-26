@@ -1,8 +1,8 @@
 'use strict';
 
-var AppuserConfigure = angular.module('userconfigure', [ ]);
+var AppuserConfigure = angular.module('userconfigure', ['ngStorage']);
 
-var userconfigCtrl = function($log, $scope, $interval, $location, UserConfigureService) {
+var userconfigCtrl = function($scope, $localStorage, $sessionStorage, $interval, $location, UserConfigureService) {
 	
 	var userconfCtrl = this;
 	$scope.users = [];  
@@ -54,7 +54,7 @@ var userconfigCtrl = function($log, $scope, $interval, $location, UserConfigureS
 		$scope.CreateyourAccount1 = false;
 		$scope.CreateyourAccount2 = false;
 		$scope.CreateyourAccount3 = true;
-		$scope.CreateyourAccount4 = false;	
+		$scope.CreateyourAccount4 = false;
 	};
 	
 	this.useraccountskip = function()
@@ -98,10 +98,13 @@ var userconfigCtrl = function($log, $scope, $interval, $location, UserConfigureS
 		$scope.users.userfinalmobile = $scope.userfinalmobile;
 		$scope.users.yesaddnow = $scope.yesaddnow;
 		$scope.users.notaddnow = $scope.notaddnow;
-		$location.url('http://localhost:8084/marketsquare/account.html');
+		
+		var oldReports = JSON.parse($window.localStorage.getItem("UserDetails"));
+		$window.localStorage.setItem("UserDetails",angular.toJson($scope.users));		
+		
 	};
 
 };
 //Register of main controller function with config module.
-AppuserConfigure.controller('userconfCtrl', [ '$log', '$scope', '$interval',
+AppuserConfigure.controller('userconfCtrl', ['$scope', '$localStorage', '$sessionStorage', '$interval',
 		'UserConfigureService', userconfigCtrl ]);
