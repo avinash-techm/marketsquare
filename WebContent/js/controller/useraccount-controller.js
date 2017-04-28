@@ -86,8 +86,11 @@ AppuserConfigure
 								if ($scope.userpasswordlogin == null) {
 									$scope.aleuserpassword = true;
 									return;
-								} else {
+								} else if(valueusers.userpassword == $scope.userpasswordlogin){
 									$scope.aleuserpassword = false;
+								}else {
+									$scope.aleuserpassword = true;
+									return;	
 								}
 								// var url = "http://" + $location.location.host
 								// + "";
