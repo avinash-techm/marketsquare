@@ -139,7 +139,7 @@ AppuserConfigure
 								$window.localStorage.setItem("UserDetails",
 										JSON.stringify($scope.users));
 								//$window.localStorage.getItem("UserDetails");
-
+								window.location.href = "http://localhost:8084/marketsquare/account.html";
 							};
 
 						} ]);
