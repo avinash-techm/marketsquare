@@ -21,7 +21,7 @@ AppuserConfigure
 							$scope.CreateyourAccount1 = false;
 							$scope.CreateyourAccount2 = false;
 							$scope.CreateyourAccount3 = false;
-							$scope.CreateyourAccount4 = false;
+							//$scope.CreateyourAccount4 = false;
 							$scope.SelectAppropriate = null;
 							$scope.CategorySupplier = null;
 
@@ -42,7 +42,7 @@ AppuserConfigure
 								$scope.CreateyourAccount1 = true;
 								$scope.CreateyourAccount2 = false;
 								$scope.CreateyourAccount3 = false;
-								$scope.CreateyourAccount4 = false;
+								//$scope.CreateyourAccount4 = false;
 							};
 
 							this.useraccount1 = function() {
@@ -50,7 +50,7 @@ AppuserConfigure
 								$scope.CreateyourAccount1 = false;
 								$scope.CreateyourAccount2 = true;
 								$scope.CreateyourAccount3 = false;
-								$scope.CreateyourAccount4 = false;
+								//$scope.CreateyourAccount4 = false;
 							};
 
 							this.useraccount2 = function() {
@@ -58,7 +58,7 @@ AppuserConfigure
 								$scope.CreateyourAccount1 = false;
 								$scope.CreateyourAccount2 = false;
 								$scope.CreateyourAccount3 = true;
-								$scope.CreateyourAccount4 = false;
+								//$scope.CreateyourAccount4 = false;
 							};
 
 							this.useraccountskip = function() {
@@ -66,7 +66,7 @@ AppuserConfigure
 								$scope.CreateyourAccount1 = false;
 								$scope.CreateyourAccount2 = false;
 								$scope.CreateyourAccount3 = false;
-								$scope.CreateyourAccount4 = true;
+								//$scope.CreateyourAccount4 = true;
 							};
 
 							this.useraccountlogin = function() {
@@ -107,7 +107,7 @@ AppuserConfigure
 								$scope.CreateyourAccount1 = false;
 								$scope.CreateyourAccount2 = false;
 								$scope.CreateyourAccount3 = false;
-								$scope.CreateyourAccount4 = true;
+								//$scope.CreateyourAccount4 = true;
 
 								$scope.users.useremail = $scope.useremail;
 								$scope.users.userpassword = $scope.userpassword;
