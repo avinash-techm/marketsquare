@@ -21,9 +21,25 @@ AppuserConfigure
 							$scope.CreateyourAccount1 = false;
 							$scope.CreateyourAccount2 = false;
 							$scope.CreateyourAccount3 = false;
-							//$scope.CreateyourAccount4 = false;
+							// $scope.CreateyourAccount4 = false;
 							$scope.SelectAppropriate = null;
 							$scope.CategorySupplier = null;
+							$scope.myuseremail = "";
+							$scope.SelectAppropriate = "";
+							var valueusers = angular
+									.fromJson($window.localStorage
+											.getItem("UserDetails"));
+
+						
+
+							$scope.initialization = function() {
+								$scope.myuseremail = valueusers.useremail;
+								$scope.SelectAppropriate = valueusers.SelectAppropriate;
+
+							}
+							$scope.initialization();
+							// initialization of page data.
+							// $scope.initialization();
 
 							this.useraccount = function() {
 								if ($scope.useremail == null) {
@@ -42,7 +58,7 @@ AppuserConfigure
 								$scope.CreateyourAccount1 = true;
 								$scope.CreateyourAccount2 = false;
 								$scope.CreateyourAccount3 = false;
-								//$scope.CreateyourAccount4 = false;
+								// $scope.CreateyourAccount4 = false;
 							};
 
 							this.useraccount1 = function() {
@@ -50,7 +66,7 @@ AppuserConfigure
 								$scope.CreateyourAccount1 = false;
 								$scope.CreateyourAccount2 = true;
 								$scope.CreateyourAccount3 = false;
-								//$scope.CreateyourAccount4 = false;
+								// $scope.CreateyourAccount4 = false;
 							};
 
 							this.useraccount2 = function() {
@@ -58,7 +74,7 @@ AppuserConfigure
 								$scope.CreateyourAccount1 = false;
 								$scope.CreateyourAccount2 = false;
 								$scope.CreateyourAccount3 = true;
-								//$scope.CreateyourAccount4 = false;
+								// $scope.CreateyourAccount4 = false;
 							};
 
 							this.useraccountskip = function() {
@@ -66,36 +82,33 @@ AppuserConfigure
 								$scope.CreateyourAccount1 = false;
 								$scope.CreateyourAccount2 = false;
 								$scope.CreateyourAccount3 = false;
-								//$scope.CreateyourAccount4 = true;
+								// $scope.CreateyourAccount4 = true;
 							};
 
 							this.useraccountlogin = function() {
-								var valueusers = JSON
-								.parse($window.localStorage
-										.getItem("UserDetails"));
-						
+
 								if ($scope.useremaillogin == null) {
 									$scope.aleuserEmail = true;
 									return;
-								} else if(valueusers.useremail == $scope.useremaillogin){
+								} else if (valueusers.useremail == $scope.useremaillogin) {
 									$scope.aleuserEmail = false;
 								} else {
 									$scope.aleuserEmail = true;
-									return;	
+									return;
 								}
 								if ($scope.userpasswordlogin == null) {
 									$scope.aleuserpassword = true;
 									return;
-								} else if(valueusers.userpassword == $scope.userpasswordlogin){
+								} else if (valueusers.userpassword == $scope.userpasswordlogin) {
 									$scope.aleuserpassword = false;
-								}else {
+								} else {
 									$scope.aleuserpassword = true;
-									return;	
+									return;
 								}
 								// var url = "http://" + $location.location.host
 								// + "";
 								// $log.log(url);
-							
+
 								// $location.href
 								// ="http://localhost:8084/marketsquare/account.html";
 								window.location.href = "http://localhost:8084/marketsquare/account.html";
@@ -107,7 +120,7 @@ AppuserConfigure
 								$scope.CreateyourAccount1 = false;
 								$scope.CreateyourAccount2 = false;
 								$scope.CreateyourAccount3 = false;
-								//$scope.CreateyourAccount4 = true;
+								// $scope.CreateyourAccount4 = true;
 
 								$scope.users.useremail = $scope.useremail;
 								$scope.users.userpassword = $scope.userpassword;
@@ -138,7 +151,7 @@ AppuserConfigure
 								console.log(JSON.stringify($scope.users));
 								$window.localStorage.setItem("UserDetails",
 										JSON.stringify($scope.users));
-								//$window.localStorage.getItem("UserDetails");
+								// $window.localStorage.getItem("UserDetails");
 								window.location.href = "http://localhost:8084/marketsquare/account.html";
 							};
 

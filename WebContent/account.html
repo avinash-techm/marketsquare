@@ -26,7 +26,7 @@
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
 
-    <body data-spy="scroll" data-target=".navbar-collapse">
+    <body data-spy="scroll" data-target=".navbar-collapse" data-ng-app="userconfigure">
 
         <div class="culmn">
             <!--Home page style-->
@@ -112,7 +112,7 @@
 
             <!--Featured Section-->
             <section id="business" class="business bg-grey roomy-70">
-                <div class="container">
+                <div class="container" data-ng-controller="userconfCtrl as userctrl">
                     <div class="row">
 <div class="col-md-3">
 <h4>My Account Dashboard </h4>
@@ -196,8 +196,8 @@
 																</thead>
 																<tbody>
 																	<tr>
-																		<td>&nbsp;</td>
-															<td>&nbsp;</td>
+																		<td>{{myuseremail}}</td>
+															<td>{{SelectAppropriate}}</td>
 															<td>&nbsp;</td>
 						
 
@@ -323,6 +323,10 @@ Denver, CO 80202
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/bootsnav.js"></script>
         <script src="js/plugins.js"></script>
-
+	<script data-require="angular.js@*" data-semver="1.3.15"
+		src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/ngstorage/0.3.6/ngStorage.min.js"></script>
+	<script src="js/controller/useraccount-controller.js"></script>
+	<script src="js/service/useraccount-service.js"></script>
     </body>
 </html>
