@@ -105,6 +105,11 @@ var productconfigCtrl = function($log, $scope, $interval, $location, ProductConf
 		$scope.detailsyourproducts2 = false;
 		$scope.detailsyourproducts3 = false;
 		$scope.detailsyourproducts4 = true;
+		
+		console.log(JSON.stringify($scope.product));
+		$window.localStorage.setItem("UserProducts",
+				JSON.stringify($scope.product));
+		//window.location.href = "http://localhost:8084/marketsquare/account.html";
 	}
 };
 //Register of main controller function with config module.

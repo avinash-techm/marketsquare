@@ -29,11 +29,15 @@ AppuserConfigure
 							var valueusers = angular
 									.fromJson($window.localStorage
 											.getItem("UserDetails"));
-
-						
-
+							
+							
+							var valueproducts = angular
+							.fromJson($window.localStorage
+									.getItem("UserProducts"));
+							
 							$scope.initialization = function() {
 								$scope.myuseremail = valueusers.useremail;
+							
 								$scope.SelectAppropriate = valueusers.SelectAppropriate;
 
 							}
