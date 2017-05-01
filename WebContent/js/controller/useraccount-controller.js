@@ -10,9 +10,9 @@ AppuserConfigure
 				[
 						'$scope',
 						'$interval',
-						'$window',
+						'$window','$location',
 						'UserConfigureService',
-						function($scope, $interval, $window) {
+						function($scope, $interval, $window,$location) {
 							var userconfCtrl = this;
 							$scope.users = {};
 							$scope.aleuserEmail = false;
@@ -41,7 +41,7 @@ AppuserConfigure
 								$scope.SelectAppropriate = valueusers.SelectAppropriate;
 
 							}
-							$scope.initialization();
+						 $scope.initialization();
 							// initialization of page data.
 							// $scope.initialization();
 
@@ -115,7 +115,8 @@ AppuserConfigure
 
 								// $location.href
 								// ="http://localhost:8084/marketsquare/account.html";
-								window.location.href = "http://localhost:8084/marketsquare/account.html";
+								window.location.href = 'http://' + $location.host() + ':' + $location.port()
+								+ '/marketsquare/account.html';
 
 							};
 
@@ -156,7 +157,9 @@ AppuserConfigure
 								$window.localStorage.setItem("UserDetails",
 										JSON.stringify($scope.users));
 								// $window.localStorage.getItem("UserDetails");
-								window.location.href = "http://localhost:8084/marketsquare/account.html";
+								
+								window.location.href = 'http://' + $location.host() + ':' + $location.port()
+								+ '/marketsquare/account.html';
 							};
 
 						} ]);
