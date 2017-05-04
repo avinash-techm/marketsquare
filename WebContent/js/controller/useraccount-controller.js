@@ -35,29 +35,29 @@ AppuserConfigure
 							.fromJson($window.localStorage
 									.getItem("UserProducts"));
 							
-							$scope.initialization = function() {
-								$scope.myuseremail = valueusers.useremail;
+							//.initialization = function() {
+								//$scope.myuseremail = valueusers.useremail;
 							
-								$scope.SelectAppropriate = valueusers.SelectAppropriate;
+								//$scope.SelectAppropriate = valueusers.SelectAppropriate;
 
-							}
-						 $scope.initialization();
+							//}
+						 //$scope.initialization();
 							// initialization of page data.
 							// $scope.initialization();
 
 							this.useraccount = function() {
-								if ($scope.useremail == null) {
-									$scope.aleuserEmail = true;
-									return;
-								} else {
-									$scope.aleuserEmail = false;
-								}
-								if ($scope.userpassword == null) {
-									$scope.aleuserpassword = true;
-									return;
-								} else {
-									$scope.aleuserpassword = false;
-								}
+								//if ($scope.useremail == null) {
+									//$scope.aleuserEmail = true;
+									//return;
+								//} else {
+									//$scope.aleuserEmail = false;
+								//}
+								//if ($scope.userpassword == null) {
+									//$scope.aleuserpassword = true;
+									//return;
+								//} else {
+									//$scope.aleuserpassword = false;
+								//}
 								$scope.CreateyourAccount = false;
 								$scope.CreateyourAccount1 = true;
 								$scope.CreateyourAccount2 = false;
@@ -91,24 +91,24 @@ AppuserConfigure
 
 							this.useraccountlogin = function() {
 
-								if ($scope.useremaillogin == null) {
-									$scope.aleuserEmail = true;
-									return;
-								} else if (valueusers.useremail == $scope.useremaillogin) {
-									$scope.aleuserEmail = false;
-								} else {
-									$scope.aleuserEmail = true;
-									return;
-								}
-								if ($scope.userpasswordlogin == null) {
-									$scope.aleuserpassword = true;
-									return;
-								} else if (valueusers.userpassword == $scope.userpasswordlogin) {
-									$scope.aleuserpassword = false;
-								} else {
-									$scope.aleuserpassword = true;
-									return;
-								}
+								//if ($scope.useremaillogin == null) {
+									//$scope.aleuserEmail = true;
+									//return;
+								//} else if (valueusers.useremail == $scope.useremaillogin) {
+									//$scope.aleuserEmail = false;
+								//} else {
+									//$scope.aleuserEmail = true;
+									//return;
+								//}
+								//if ($scope.userpasswordlogin == null) {
+									//$scope.aleuserpassword = true;
+									//return;
+								//} else if (valueusers.userpassword == $scope.userpasswordlogin) {
+								//	$scope.aleuserpassword = false;
+								//} else {
+									//$scope.aleuserpassword = true;
+									//return;
+								//}
 								// var url = "http://" + $location.location.host
 								// + "";
 								// $log.log(url);
